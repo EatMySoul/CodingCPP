@@ -14,23 +14,14 @@ int main()
 	for(int i = 0; i < N; i++)
 		cin >> X[i];
 
-	cout << "Input Y: " << endl;
-	for(int i = 0; i < N; i++)
-		cin >> Y[i];
-
 	for(int i = 0; i < N; i++)
 	{
-		int tmp = X[N - i - 1];
-		X[N - i - 1] = Y[i];
-		Y[i] = tmp;
+		Y[N - i - 1] = X[i];
 	}
 
 	cout << endl << "Y:" << endl;
 	for(int i = 0; i < N; i++)
 		cout << Y[i] << endl;
-	cout << endl << "X:" << endl;
-	for(int i = 0; i < N; i++)
-		cout << X[i] << endl;
 
 	return 0;
 }

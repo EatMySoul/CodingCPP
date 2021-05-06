@@ -11,13 +11,12 @@ int main()
 {
 	int N , sum = 0;
 	cin >> N;
+
+	int fact = 1;
+	
 	for(int i = 1; i <= N; i++)
 	{
-		int fact = 1;
-		for(int j = 1; j <= i; j++)
-		{
-			fact = fact*j;
-		}
+		fact = fact*i;
 		sum = sum + fact;
 	}
 	cout << sum;

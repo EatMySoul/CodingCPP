@@ -14,6 +14,7 @@ int main()
 		cin >> B[i];
 
 	max = B[0];
+	pos_max = 0;
 
 	for(int i = 1; i < M; i++)
 	{

@@ -20,6 +20,11 @@ int main()
 			count++;
 		}
 	}
-	cout << "Среднее арефметические: " << sum / count;
+
+	if(count > 0)
+		cout << "Среднее арефметические: " << sum / count;
+	else
+		cout << "Нет положительных чисел";
+	
 	return 0;
 }
